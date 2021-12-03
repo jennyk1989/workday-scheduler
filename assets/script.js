@@ -1,6 +1,7 @@
 /* open planner --> current day is display at top of cal*/
 
 // each time block is color-coded to indicate whether it is in the past, present, or future
+//gray = past, red = now, green = coming up 
 
 // click into a time block & enter an event
 
