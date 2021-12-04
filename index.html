@@ -16,65 +16,61 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- container for displaying current day -->
       <p id="currentDay" class="lead"></p>
     </header>
+
+<!--********************************* application HTML *********************************-->
+<!--CSS predefined classes = description,time-block,row,hour,past,present,future,saveBtn-->
     <div class="container">
+
       <!--*********** 8am timeblock ***********-->
-      <div class="container" id="eightAM">
+      <div id="eightAM" class="row time-block">
         <!-- div for displaying the time -->
-        <div>
-
+        <div class="hour">
+          8AM
         </div>
         <!-- text box to allow user to enter the event's text -->
-        <textarea>
-
+        <textarea class="description">
         </textarea>
         <!-- button to allow user to save the event -->
-        <button>
-
+        <button class="saveBtn">
+          <!-- save ICON from Font Awesome -->
+          <i class="fas fa-save"></i>
         </button>
-        
-        
-        8AM
       </div>
+
       <!--*********** 9am timeblock ***********-->
-      <div class="container" id="nineAM">
-        9AM
+      <div id="nineAM" class="row time-block">
         <!-- div for displaying the time -->
         <div>
-
+          9AM
         </div>
         <!-- text box to allow user to enter the event's text -->
         <textarea>
-
         </textarea>
         <!-- button to allow user to save the event -->
         <button>
-          
         </button>
       </div>
       <!--*********** 10am timeblock ***********-->
-      <div class="container" id="tenAM">
-        10AM
+      <div id="tenAM" class="row time-block">
         <!-- div for displaying the time -->
         <div>
-
+          10AM
         </div>
         <!-- text box to allow user to enter the event's text -->
         <textarea>
-
         </textarea>
         <!-- button to allow user to save the event -->
         <button>
-          
         </button>
       </div>
       <!--*********** 11am timeblock ***********-->
-      <div class="container" id="elevenAM">
-        11AM
+      <div class="row" id="elevenAM">
         <!-- div for displaying the time -->
         <div>
-
+          11AM
         </div>
         <!-- text box to allow user to enter the event's text -->
         <textarea>
@@ -86,7 +82,7 @@
         </button> 
       </div>
       <!--*********** 12pm timeblock ***********-->
-      <div class="container" id="twelvePM">
+      <div class="row" id="twelvePM">
         12PM
         <!-- div for displaying the time -->
         <div>
@@ -102,7 +98,7 @@
         </button>
       </div>
       <!--*********** 1pm timeblock ***********-->
-      <div class="container" id="onePM">
+      <div class="row" id="onePM">
         1PM
         <!-- div for displaying the time -->
         <div>
@@ -118,7 +114,7 @@
         </button>
       </div>
       <!--*********** 2pm timeblock ***********-->
-      <div class="container" id="twoPM">
+      <div class="row" id="twoPM">
         2PM
         <!-- div for displaying the time -->
         <div>
@@ -134,7 +130,7 @@
         </button>
       </div>
       <!--*********** 3pm timeblock ***********-->
-      <div class="container" id="threePM">
+      <div class="row" id="threePM">
         3PM 
         <!-- div for displaying the time -->
         <div>
@@ -150,7 +146,7 @@
         </button>
       </div>
       <!--*********** 4pm timeblock ***********-->
-      <div class="container" id="fourPM">
+      <div class="row" id="fourPM">
         4PM
         <!-- div for displaying the time -->
         <div>
@@ -166,7 +162,7 @@
         </button>
       </div>
       <!--*********** 5pm timeblock ***********-->
-      <div class="container" id="fivePM">
+      <div class="row" id="fivePM">
         5PM
         <!-- div for displaying the time -->
         <div>
