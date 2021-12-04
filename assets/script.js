@@ -1,4 +1,10 @@
+//when open planner...(doc needs to load when page is opened)
+$(function() {});
+
 /* open planner --> current day is display at top of cal*/
+//id = currentDay
+$("#currentDAY").text(moment().format("dddd, MMMM Do YYYY"));
+
 
 // each time block is color-coded to indicate whether it is in the past, present, or future
 //gray = past, red = now, green = coming up 
