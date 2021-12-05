@@ -1,10 +1,13 @@
+//doc ready function
+
 // open planner --> current day is display at top of cal
 //id = currentDay
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
+//CSS predefined = description,time-block,row,hour,past,present,future,saveBtn
 
 // each time block is color-coded to indicate whether it is in the past, present, or future
-//gray = past (.past), red = now (.present), green = coming up (.future)
+// gray = past (.past), red = now (.present), green = coming up (.future)
 
 
 
