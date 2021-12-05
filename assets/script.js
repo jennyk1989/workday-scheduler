@@ -3,7 +3,33 @@ $(document).ready(function() {
     // open planner --> current day is display at top of cal
     //id = currentDay
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
+
+    // save text entered into a timeblock when save button is clicked
+    //save button event listener
+    $(".saveBtn").on("click", function() {
+        //get the text entered into the timeblock (class is .description)
+        let value = $(this).siblings(".description").val();
+        //get the time of that timeblock that text was entered into by pulling the id attribute
+        let keyname = $(this).parent().attr("id");
     
+        //save entered text into local storage
+        localStorage.setItem(keyname, value);
+    });
+    
+    // refresh page & saved events persist (set timeblock's id and .description to previous values)
+    // $(selector).val(value)
+    $("#hour8 .description").val(localStorage.getItem("hour8"));
+    $("#hour9 .description").val(localStorage.getItem("hour9"));
+    $("#hour10 .description").val(localStorage.getItem("hour10"));
+    $("#hour11 .description").val(localStorage.getItem("hour11"));
+    $("#hour12 .description").val(localStorage.getItem("hour12"));
+    $("#hour13 .description").val(localStorage.getItem("hour13"));
+    $("#hour14 .description").val(localStorage.getItem("hour14"));
+    $("#hour15 .description").val(localStorage.getItem("hour15"));
+    $("#hour16 .description").val(localStorage.getItem("hour16"));
+    $("#hour17 .description").val(localStorage.getItem("hour17"));
+    
+
     //CSS predefined = description,time-block,row,hour,past,present,future,saveBtn
     
     // each time block is color-coded to indicate whether it is in the past, present, or future
@@ -38,11 +64,6 @@ $(document).ready(function() {
         });
     }
     timeUpdate();
-    // click into a time block & enter an event
-    
-    // click the save button, text for that event is saved in local storage
-    
-    // refresh the page & the saved events persist
 
 });
 
